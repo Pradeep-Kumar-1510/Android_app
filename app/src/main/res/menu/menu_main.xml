@@ -13,5 +13,8 @@
     <item
         android:id="@+id/helpAction"
         android:title="@string/help" />
+    <item
+        android:id="@+id/viewFeedbacks"
+        android:title="@string/view_feedbacks" />
 
 </menu>

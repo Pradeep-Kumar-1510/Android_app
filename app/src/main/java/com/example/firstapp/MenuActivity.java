@@ -59,6 +59,12 @@ public class MenuActivity extends AppCompatActivity {
             Toast.makeText(this, "You are in Help page", Toast.LENGTH_SHORT).show();
             return true;
         }
+        else if (itemId == R.id.viewFeedbacks) {
+            Intent intent = new Intent(MenuActivity.this, ViewFeedbackActivity.class);
+            startActivity(intent);
+            Toast.makeText(this, "You are viewing feedbacks submitted", Toast.LENGTH_SHORT).show();
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

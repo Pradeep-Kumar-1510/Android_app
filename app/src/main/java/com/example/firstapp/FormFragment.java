@@ -1,5 +1,6 @@
 package com.example.firstapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,6 @@ import androidx.fragment.app.Fragment;
 public class FormFragment extends Fragment {
 
     private EditText feedbackEditText;
-    private Button submitFeedbackButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -22,26 +22,22 @@ public class FormFragment extends Fragment {
 
 
         feedbackEditText = view.findViewById(R.id.feedbackEditText);
-        submitFeedbackButton = view.findViewById(R.id.submitFeedbackButton);
+        Button submitFeedbackButton = view.findViewById(R.id.submitFeedbackButton);
 
 
-        submitFeedbackButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        submitFeedbackButton.setOnClickListener(v -> {
 
-                String feedback = feedbackEditText.getText().toString();
+            String feedback = feedbackEditText.getText().toString();
 
 
-                if (!feedback.isEmpty()) {
-
-                    Toast.makeText(getActivity(), "Feedback submitted: ", Toast.LENGTH_SHORT).show();
-
-
-                    feedbackEditText.getText().clear();
-                } else {
-
-                    Toast.makeText(getActivity(), "Please enter your feedback", Toast.LENGTH_SHORT).show();
-                }
+            if (!feedback.isEmpty()) {
+                 Intent intent = new Intent(getActivity(),ViewFeedbackActivity.class);
+                 intent.putExtra("feedback",feedback);
+                 startActivity(intent);
+                Toast.makeText(getActivity(), "Feedback submitted: ", Toast.LENGTH_SHORT).show();
+                feedbackEditText.getText().clear();
+            } else {
+                Toast.makeText(getActivity(), "Please enter your feedback", Toast.LENGTH_SHORT).show();
             }
         });
 

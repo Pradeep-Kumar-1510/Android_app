@@ -17,6 +17,8 @@ public class LifeCycleActivity extends AppCompatActivity {
         Button backButton = findViewById(R.id.backButton);
         Log.d("lifecycle", "onCreate invoked");
 
+
+
         backButton.setOnClickListener(v -> {
             Intent i = new Intent(LifeCycleActivity.this, MenuActivity.class);
             startActivity(i);

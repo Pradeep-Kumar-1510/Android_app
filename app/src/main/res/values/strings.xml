@@ -41,4 +41,7 @@
     <string name="get_rating">Get Rating</string>
     <string name="submit_feedback">Submit Feedback</string>
     <string name="enter_your_feedback_here">Enter your feedback here</string>
+    <string name="feedbacks_subitted">Feedbacks Submitted</string>
+    <string name="feedbacks">Feedbacks</string>
+    <string name="view_feedbacks">View Feedbacks</string>
 </resources>
