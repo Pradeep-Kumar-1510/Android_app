@@ -13,37 +13,37 @@
         android:theme="@style/Theme.FirstApp"
         tools:targetApi="31">
         <activity
-            android:name=".ViewFeedbackActivity"
+            android:name=".activity.ViewFeedbackActivity"
             android:exported="false" />
         <activity
-            android:name=".LifeCycleActivity"
+            android:name=".activity.LifeCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".FeedbackActivity"
+            android:name=".activity.FeedbackActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".activity.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerViewActivity"
+            android:name=".activity.RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".ListViewActivity"
+            android:name=".activity.ListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".GridViewActivity"
+            android:name=".activity.GridViewActivity"
             android:exported="false" />
         <activity
-            android:name=".HomePageActivity"
+            android:name=".activity.HomePageActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activity.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -51,6 +51,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activity.BroadcastActivity"
+            android:exported="true"/>
+
+        <receiver android:name=".broadcast_files.FirstBroadcastReceiver"
+            android:exported="true">
+            <intent-filter android:priority="1">
+                <action android:name="com.example.FIRST_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".broadcast_files.SecondBroadcastReceiver"
+            android:exported="true">
+            <intent-filter android:priority="2">
+                <action android:name="com.example.SECOND_BROADCAST" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

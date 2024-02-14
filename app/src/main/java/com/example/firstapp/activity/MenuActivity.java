@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,9 @@ import androidx.appcompat.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.firstapp.fragments.AboutUsFragment;
+import com.example.firstapp.R;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -65,7 +68,12 @@ public class MenuActivity extends AppCompatActivity {
             Toast.makeText(this, "You are viewing feedbacks submitted", Toast.LENGTH_SHORT).show();
             return true;
         }
-
+        else if (itemId == R.id.broadcast) {
+            Intent intent = new Intent(MenuActivity.this, BroadcastActivity.class);
+            startActivity(intent);
+            Toast.makeText(this, "You are in Broadcast Page", Toast.LENGTH_SHORT).show();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 }

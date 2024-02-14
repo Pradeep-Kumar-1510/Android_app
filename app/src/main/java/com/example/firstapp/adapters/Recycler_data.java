@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.adapters;
 
 public class Recycler_data {
     private String description;

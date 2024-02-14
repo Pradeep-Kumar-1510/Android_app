@@ -1,10 +1,14 @@
-package com.example.firstapp;
+package com.example.firstapp.activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.firstapp.adapters.CustomAdapter;
+import com.example.firstapp.R;
+import com.example.firstapp.adapters.Recycler_data;
 
 public class RecyclerViewActivity extends AppCompatActivity {
 

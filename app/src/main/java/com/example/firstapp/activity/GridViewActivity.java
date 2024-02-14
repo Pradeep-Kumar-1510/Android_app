@@ -1,9 +1,13 @@
-package com.example.firstapp;
+package com.example.firstapp.activity;
 
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.firstapp.adapters.GridAdapter;
+import com.example.firstapp.adapters.GridModel;
+import com.example.firstapp.R;
 
 import java.util.ArrayList;
 

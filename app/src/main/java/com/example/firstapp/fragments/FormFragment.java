@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
+
+import com.example.firstapp.R;
+import com.example.firstapp.activity.ViewFeedbackActivity;
 
 public class FormFragment extends Fragment {
 
@@ -31,7 +34,7 @@ public class FormFragment extends Fragment {
 
 
             if (!feedback.isEmpty()) {
-                 Intent intent = new Intent(getActivity(),ViewFeedbackActivity.class);
+                 Intent intent = new Intent(getActivity(), ViewFeedbackActivity.class);
                  intent.putExtra("feedback",feedback);
                  startActivity(intent);
                 Toast.makeText(getActivity(), "Feedback submitted: ", Toast.LENGTH_SHORT).show();

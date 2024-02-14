@@ -16,5 +16,8 @@
     <item
         android:id="@+id/viewFeedbacks"
         android:title="@string/view_feedbacks" />
+    <item
+        android:id="@+id/broadcast"
+        android:title="@string/broadcast_title"/>
 
 </menu>

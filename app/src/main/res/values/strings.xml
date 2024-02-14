@@ -44,4 +44,6 @@
     <string name="feedbacks_subitted">Feedbacks Submitted</string>
     <string name="feedbacks">Feedbacks</string>
     <string name="view_feedbacks">View Feedbacks</string>
+    <string name="broadcast">click to start broadcast</string>
+    <string name="broadcast_title">Broadcast</string>
 </resources>

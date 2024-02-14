@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.fragments;
 
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -13,6 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.firstapp.R;
 
 public class AboutUsFragment extends Fragment {
 

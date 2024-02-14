@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.activity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.firstapp.R;
 
 import java.util.ArrayList;
 import java.util.List;

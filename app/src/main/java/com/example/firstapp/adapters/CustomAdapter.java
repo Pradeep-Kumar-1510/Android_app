@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.firstapp.R;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {
     private Recycler_data[] Recyclerdata;

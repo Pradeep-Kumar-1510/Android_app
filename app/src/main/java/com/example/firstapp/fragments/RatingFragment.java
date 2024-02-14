@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.fragments;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.Toast;
+
+import com.example.firstapp.R;
 
 public class RatingFragment extends Fragment {
 

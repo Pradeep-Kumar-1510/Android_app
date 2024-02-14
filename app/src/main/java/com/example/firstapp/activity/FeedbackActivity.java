@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.firstapp.activity;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -7,6 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.example.firstapp.fragments.FormFragment;
+import com.example.firstapp.R;
+import com.example.firstapp.fragments.RatingFragment;
 
 public class FeedbackActivity extends AppCompatActivity {
 
